@@ -1,0 +1,35 @@
+.carrossel{
+  position: relative;
+  width: 100%; /* Ocupa a largura disponível */
+  max-width: 800px; /* Limite para PC */
+  margin: auto;
+  overflow: hidden; /* Esconde o que está fora da moldura */
+  border-radius: 10px;
+}
+
+.imagens-carrossel {
+  display: flex; /* Coloca as imagens lado a lado */
+  transition: transform 0.5s ease-in-out; /* Suaviza o deslize */
+  width: 100%;
+}
+
+.imagem-carrossel{
+  min-width: 100%; /* Cada imagem ocupa 100% da moldura */
+  object-fit: cover;
+  height: 400px; /* Altura fixa ou use aspect-ratio */
+}
+
+/* Botões */
+#botao-ir, #botao-voltar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#botao-ir { left: 10px; }
+#botao-voltar{ right: 10px; }
