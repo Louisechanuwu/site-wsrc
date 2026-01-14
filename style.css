@@ -33,3 +33,27 @@
 
 #botao-ir { left: 10px; }
 #botao-voltar{ right: 10px; }
+
+
+/*header*/
+
+header {
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+ background: #fff;
+ position: fixed;
+ width: 100%;
+ top: 0;
+}
+
+header, nav ul {
+ display: flex;
+ justify-content: space-between;
+ padding: 1rem;
+}
+
+nav ul li {
+ margin-left: 1rem;
+ list-style-type: none;
+}
+
+/*fim header*/
