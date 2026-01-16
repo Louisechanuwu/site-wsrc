@@ -1,3 +1,5 @@
+/*carrossel*/
+
 .carrossel{
   position: relative;
   width: 100%; /* Ocupa a largura disponível */
@@ -34,6 +36,7 @@
 #botao-ir { left: 10px; }
 #botao-voltar{ right: 10px; }
 
+/*fim carrossel*/
 
 /*header*/
 
@@ -57,3 +60,17 @@ nav ul li {
 }
 
 /*fim header*/
+
+/*Icones de Contato*/
+
+#WhatsApp { 
+position: fixed; bottom: 15px; right: 15px; z-index: 9999;
+}
+
+#Instagram {
+position: fixed; bottom: 75px; right: 15px; z-index: 9999;
+}
+
+
+/*Fim Icones de Contato*/
+
