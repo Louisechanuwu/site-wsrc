@@ -34,6 +34,24 @@
     </div>
 
 
+    <div class="gallery-grid">
+        <img src="https://wsrc.com.br/sliderimagens/img1%20para%20PC.jpeg" onclick="openModal(0)" alt="Foto 1">
+        <img src="https://wsrc.com.br/sliderimagens/img2%20para%20PC.jpeg" onclick="openModal(1)" alt="Foto 2">
+        <img src="https://wsrc.com.br/sliderimagens/img3%20para%20PC.jpeg" onclick="openModal(2)" alt="Foto 3">
+    </div>
+
+    <div id="lightbox" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+  
+    <div class="modal-content">
+        <img id="modal-img" src="https://isinaliza.vtexassets.com/arquivos/ids/173952-800-auto?v=636848933160370000&width=800&height=auto&aspect=true" alt="Imagem Ampliada">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    </div>
+
+
+
     <div id="Instagram">
        <a href="https://www.instagram.com/wsreformasconstrucao?igsh=MWhuZ3hpNWcwazA2ag==" target="_blank">
             <img src="https://wsrc.com.br/icons/iconinsta.png" width="50px" alt="Fale conosco pelo Instagram" title="Fale conosco pelo Instagram">
@@ -54,5 +72,6 @@
 
 
     <script src="carrossel.js"></script>
+   <script src="galeria.js"></script>
 </body>
 </html>
