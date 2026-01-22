@@ -3,10 +3,11 @@
 .carrossel{
   position: relative;
   width: 100%; /* Ocupa a largura disponível */
-  max-width: 800px; /* Limite para PC */
+  max-width: 80%  ; /* Limite para PC */
   margin: auto;
   overflow: hidden; /* Esconde o que está fora da moldura */
   border-radius: 10px;
+
 }
 
 .imagens-carrossel {
@@ -43,7 +44,7 @@
 header {
  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
  background: #fff;
- position: fixed;
+ position:  static;
  width: 100%;
  top: 0;
 }

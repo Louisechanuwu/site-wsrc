@@ -5,6 +5,7 @@ const modal = document.getElementById('lightbox');
 const modalImg = document.getElementById('modal-img');  
 let currentIndex = 0;
 
+
 function openModal(index) {
   currentIndex = index;
   modal.style.display = "flex"; // Mostra o popup
