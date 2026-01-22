@@ -34,8 +34,8 @@
   cursor: pointer;
 }
 
-#botao-ir { left: 10px; }
-#botao-voltar{ right: 10px; }
+#botao-ir { right: 10px; }
+#botao-voltar{ left: 10px; }
 
 /*fim carrossel*/
 

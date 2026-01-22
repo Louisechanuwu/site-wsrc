@@ -16,27 +16,39 @@ window.onload = function() {
     function moveToNext() {
         index = (index + 1) % images.length;
         updateCarousel();
+        console.log(autoPlayInterval)
+    }
+    
+    function stopAutoPlay() {
+    clearInterval(autoPlayInterval);
+    autoPlayInterval = null; 
     }
 
     function startAutoPlay() {
+        if(autoPlayInterval){
+            autoPlayInterval = clearInterval(); 
+            
+        }   
         autoPlayInterval = setInterval(moveToNext, 3000);
     }
 
     nextBtn.addEventListener('click', () => {
-        clearInterval(autoPlayInterval);
-        moveToNext();
+        stopAutoPlay();
         startAutoPlay();
+        console.log("pra frente , intervalo ", autoPlayInterval)
     });
 
     prevBtn.addEventListener('click', () => {
-        clearInterval(autoPlayInterval);
+        stopAutoPlay(); 
         index = (index - 1 + images.length) % images.length;
+        console.log(index);
         updateCarousel();
         startAutoPlay();
+        console.log("pra tras , intervalo ", autoPlayInterval)
     });
 
-    container.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
-    container.addEventListener('mouseleave', startAutoPlay);
+    container.addEventListener('mouseenter', () => stopAutoPlay());
+    container.addEventListener('mouseleave', startAutoPlay());
 
     window.addEventListener('resize', updateCarousel);
     
