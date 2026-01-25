@@ -34,7 +34,10 @@ window.onload = function() {
 
     nextBtn.addEventListener('click', () => {
         stopAutoPlay();
+        updateCarousel();
+        moveToNext();
         startAutoPlay();
+        
         console.log("pra frente , intervalo ", autoPlayInterval)
     });
 
