@@ -69,10 +69,9 @@
     <div class="galeria">
 
 
-
-        <div class="single-galeria wg2 hg2">
-            <div class="img">
-                <img src="fotosgaleria/foto6.jpeg" alt="">
+        <div class="single-galeria wg2 hg2" onclick="openModal(1)">
+            <div class="img" >
+                <img src="fotosgaleria/foto6.jpeg"  alt="">
             </div>
 
             <div class="overflow"></div>
@@ -83,11 +82,21 @@
                 <p>Reforma em 3 lojas, 1 garagem, 2 apartamentos (que foram transformados em 3), na fachada e na calçada.</p>
             </div>
 
+
         </div>
 
+        <!--modal-->
+            <div id="lightbox" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+        
+            <div class="modal-content">
+                <img id="modal-img" src="https://isinaliza.vtexassets.com/arquivos/ids/173952-800-auto?v=636848933160370000&width=800&height=auto&aspect=true" alt="Imagem Ampliada">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+             </div>
+            </div>
 
-
-        <div class="single-galeria wg2">
+        <div class="single-galeria wg2" onclick="openModal(2)">
             <div class="img">
                 <img src="fotosgaleria/foto5.jpeg" alt="">
             </div>  
@@ -104,7 +113,7 @@
 
         
 
-        <div class="single-galeria">
+        <div class="single-galeria" onclick="openModal(3)">
             <div class="img">
                 <img src="fotosgaleria/foto4.jpeg" alt="">
             </div>  
@@ -121,7 +130,7 @@
 
 
 
-        <div class="single-galeria">
+        <div class="single-galeria" onclick="openModal(1)">
             <div class="img">
                 <img src="fotosgaleria/foto3.jpeg" alt="">
             </div>        

@@ -19,7 +19,7 @@
 .imagem-carrossel{
   min-width: 100%; /* Cada imagem ocupa 100% da moldura */
   object-fit: cover;
-  height: 400px; /* Altura fixa ou use aspect-ratio */
+  height: 500px; /* Altura fixa ou use aspect-ratio */
 }
 
 /* Botões */
