@@ -33,6 +33,47 @@
         
     </div>
 
+    
+<section class="sobre-container">
+    <script>function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);
+
+// Executa uma vez ao carregar para caso a div já esteja na tela
+document.addEventListener("DOMContentLoaded", reveal);
+
+</script>
+    <div class="sobre-card reveal">
+        <div class="sobre-header">
+            <h2>Sobre a WS</h2>
+            <div class="linha-detalhe"></div>
+        </div>
+        <div class="sobre-texto">
+            <p><strong>Desde 1991</strong>, atuando na área da construção civil, a <strong>WS Reformas & Construção</strong> conta com profissionais especializados nos mais diversos tipos de serviço.</p>
+            
+            <p>Realizamos serviços residenciais, comerciais e corporativos, do projeto ao acabamento. Além disso, contamos com parceiros especializados na área da engenharia, design e arquitetura, tudo para atender da melhor maneira ao seu pedido.</p>
+            
+            <p>Nosso maior desejo é entregar para nossos clientes a melhor qualidade em serviço, com entrega conforme o prazo e sem preocupações, buscando garantir a satisfação do cliente.</p>
+            
+            <p class="chamada">Queremos realizar seus sonhos, transformando ideias em realidade e proporcionar a você a melhor qualidade nas reformas e construções.</p>
+            
+            <p>Nosso valor está em atender a necessidade do nosso cliente, prestando o melhor serviço para você.</p>
+        </div>
+    </div>
+</section>
+
+
 
     <div class="gallery-grid">
         <img src="https://wsrc.com.br/sliderimagens/img1%20para%20PC.jpeg" onclick="openModal(0)" alt="Foto 1">
@@ -66,6 +107,7 @@
 
     
     <!--GALERIA-->
+    <div id="alinhargaleria">
     <div class="galeria">
 
 
@@ -144,8 +186,8 @@
             </div>
 
         </div>
+        </div>
     </div><!--FIM DA GALERIA-->
-
 
 
 

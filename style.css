@@ -165,12 +165,19 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
         grid-row: span 2;
     }
 
+      #alinhargaleria{
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
     div.galeria {
         width: 90%;
         height: 90vh;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 45vh;
+        
 
     }
 
@@ -254,3 +261,72 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
 
 }
   /*Fim Galeria 2*/
+
+  /*Caixas de texto*/
+    .sobre-container {
+    width: 100%;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sobre-card {
+    background: #1c1c33; /* Fundo azul escuro profundo */
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-right: 6px solid #eded06; /* Detalhe lateral em amarelo */
+    color: #fff; /* Texto principal em branco */
+}
+
+.sobre-header h2 {
+    font-size: 2.2rem;
+    color: #eded06; /* Título em amarelo */
+    margin-bottom: 10px;
+}
+
+.linha-detalhe {
+    width: 80px;
+    height: 4px;
+    background-color: #3c4474; /* Azul médio para o detalhe */
+    margin-bottom: 30px;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f0f0f0; /* Branco levemente acinzentado para leitura */
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.sobre-texto strong {
+    color: #eded06; /* Destaques em amarelo */
+}
+
+.chamada {
+    font-style: italic;
+    background: #3c4474; /* Fundo azul médio para a citação */
+    padding: 20px;
+    border-radius: 4px;
+    color: #fff !important;
+}
+
+
+    /* Classe para o efeito de revelação */
+    .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+    }
+
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+
+  /*fim Caixas de texto*/
