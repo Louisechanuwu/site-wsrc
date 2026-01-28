@@ -269,53 +269,127 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
     display: flex;
     justify-content: center;
     
-}
+    }
 
-.sobre-card {
-    background: #1c1c33; /* Fundo azul escuro profundo */
-    max-width: 900px;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    border-right: 6px solid #eded06; /* Detalhe lateral em amarelo */
-    color: #fff; /* Texto principal em branco */
-}
+    .sobre-card {
+        background: #1c1c33; /* Fundo azul escuro profundo */
+        max-width: 900px;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        border-right: 6px solid #eded06; /* Detalhe lateral em amarelo */
+        color: #fff; /* Texto principal em branco */
+    }
 
-.sobre-header h2 {
-    font-size: 2.2rem;
-    color: #eded06; /* Título em amarelo */
-    margin-bottom: 10px;
-}
+    .sobre-header h2 {
+        font-size: 2.2rem;
+        color: #eded06; /* Título em amarelo */
+        margin-bottom: 10px;
+    }
 
-.linha-detalhe {
-    width: 80px;
-    height: 4px;
-    background-color: #3c4474; /* Azul médio para o detalhe */
-    margin-bottom: 30px;
-}
+    .linha-detalhe {
+        width: 80px;
+        height: 4px;
+        background-color: #3c4474; /* Azul médio para o detalhe */
+        margin-bottom: 30px;
+    }
 
-.sobre-texto p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #f0f0f0; /* Branco levemente acinzentado para leitura */
-    margin-bottom: 20px;
-    text-align: justify;
-}
+    .sobre-texto p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #f0f0f0; /* Branco levemente acinzentado para leitura */
+        margin-bottom: 20px;
+        text-align: justify;
+    }
 
-.sobre-texto strong {
-    color: #eded06; /* Destaques em amarelo */
-}
+    .sobre-texto strong {
+        color: #eded06; /* Destaques em amarelo */
+    }
 
-.chamada {
-    font-style: italic;
-    background: #3c4474; /* Fundo azul médio para a citação */
-    padding: 20px;
-    border-radius: 4px;
-    color: #fff !important;
-}
+    .chamada {
+        font-style: italic;
+        background: #3c4474; /* Fundo azul médio para a citação */
+        padding: 20px;
+        border-radius: 4px;
+        color: #fff !important;
+    }
 
 
-    /* Classe para o efeito de revelação */
+        /* Classe para o efeito de revelação */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .servicos-container {
+        width: 100%;
+        padding: 40px 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicos-card {
+        background-color: #1c1c33; /* Seu Azul Escuro */
+        width: 100%;
+        max-width: 800px; /* Limita a largura para não ficar esticado */
+        margin: 0 auto;    /* CENTRALIZA A DIV ENTRE ESQUERDA E DIREITA */
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        border-top: 5px solid #eded06; /* Detalhe superior em amarelo */
+    }
+
+    .servicos-header h2 {
+        color: #eded06; /* Amarelo no título */
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .linha-detalhe {
+        width: 50px;
+        height: 3px;
+        background-color: #3c4474; /* Azul médio para detalhe */
+        margin-bottom: 25px;
+    }
+
+    .lista-servicos {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Divide em 2 colunas se houver espaço */
+        gap: 15px;
+    }
+
+    .lista-servicos li {
+        color: #fff;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #3c4474; /* Linha sutil entre itens */
+    }
+
+    .lista-servicos li span {
+        color: #eded06; /* Checkmark em amarelo */
+        font-weight: bold;
+        margin-right: 15px;
+        font-size: 1.2rem;
+    }
+
+    .e-mais {
+        font-style: italic;
+        border-bottom: none !important;
+        font-weight: bold;
+    }
+
+    /* Reutilizando o efeito de revelação do "Sobre Nós" */
     .reveal {
         opacity: 0;
         transform: translateY(30px);
@@ -326,7 +400,5 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
         opacity: 1;
         transform: translateY(0);
     }
-
-
 
   /*fim Caixas de texto*/
