@@ -41,25 +41,60 @@
 
 /*header*/
 
-header {
- box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
- background: #fff;
- position:  static;
- width: 100%;
- top: 0;
+.main-header {
+    background-color: #1c1c33; 
+    padding: 20px 0;
+    width: 100%;
+    position: sticky; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-header, nav ul {
- display: flex;
- justify-content: space-between;
- padding: 1rem;
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
- margin-left: 1rem;
- list-style-type: none;
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease; 
+    position: relative;
 }
 
+
+
+.nav-list li a:hover {
+    color: #1c1c33; 
+    background-color: #eded06; 
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(237, 237, 6, 0.4); 
+}
+
+.nav-list li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 50%;
+    background-color: #eded06;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-list li a:hover::after {
+    width: 70%; 
+}
 /*fim header*/
 
 /*Icones de Contato*/

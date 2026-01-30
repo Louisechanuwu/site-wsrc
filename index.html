@@ -9,16 +9,16 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li>Ínicio</li>
-                <li>Sobre nós</li>
-                <li>Serviços</li>
-                <li>Entre em contato</li>
-            </ul>
-        </nav>
-    </header>
+    <header class="main-header">
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre-nos">Sobre nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Entre em contato</a></li>
+        </ul>
+    </nav>
+</header>
 
     <div class="carrossel"> 
 
@@ -34,7 +34,7 @@
     </div>
 
     
-    <section class="sobre-container">
+    <section id="sobre-nos" class="sobre-container">
         <script>function reveal() {
         var reveals = document.querySelectorAll(".reveal");
         for (var i = 0; i < reveals.length; i++) {
@@ -73,7 +73,7 @@
         </div>
     </section>
 
-    <section class="servicos-container">
+    <section id="servicos" class="servicos-container">
         <div class="servicos-card reveal">
             <div class="servicos-header">
                 <h2>Serviços Realizados</h2>
