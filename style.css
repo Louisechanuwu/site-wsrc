@@ -41,7 +41,7 @@
 
 /*header*/
 
-.main-header {
+.oheader{
     background-color: #1c1c33; 
     padding: 20px 0;
     width: 100%;
@@ -95,6 +95,7 @@
 .nav-list li a:hover::after {
     width: 70%; 
 }
+
 /*fim header*/
 
 /*Icones de Contato*/
