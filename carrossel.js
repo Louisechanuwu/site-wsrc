@@ -28,7 +28,7 @@ window.onload = function() {
     function startAutoPlay() {
        
         stopAutoPlay();
-        autoPlayInterval = setInterval(moveToNext, 3000);
+        autoPlayInterval = setInterval(moveToNext, 2500);
     }
 
     nextBtn.addEventListener('click', () => {
