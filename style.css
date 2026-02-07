@@ -4,6 +4,21 @@
     padding: 0;
 }
 
+@media screen and (max-width: 768px) {
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        scrollbar-width: none;
+        background-color: white;
+    }
+
+    body {
+        -ms-overflow-style: none;
+    }
+}
 
 /*carrossel*/
 
@@ -44,6 +59,25 @@
 #botao-ir { right: 10px; }
 #botao-voltar{ left: 10px; }
 
+@media screen and (max-width: 768px) {
+  .carrossel {
+    max-width: 95%; 
+    border-radius: 8px;
+  }
+
+  .imagem-carrossel {
+    height: 200px; 
+  }
+
+  #botao-ir, #botao-voltar {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background: rgba(28, 28, 51, 0.9); 
+  }
+}
+
 /*fim carrossel*/
 
 /*header*/
@@ -81,8 +115,6 @@
     position: relative;
 }
 
-
-
 .nav-list li a:hover {
     color: #1c1c33; 
     background-color: #eded06; 
@@ -104,6 +136,25 @@
 
 .nav-list li a:hover::after {
     width: 70%; 
+}
+
+@media screen and (max-width: 768px) {
+    .oheader {
+        padding: 10px 0; 
+    }
+
+    .nav-list {
+        gap: 10px;
+    }
+
+    .nav-list li a {
+        font-size: 0.85rem;
+        padding: 6px 8px;
+    }
+
+    .nav-list li a::after {
+        display: none;
+    }
 }
 
 /*fim header*/
