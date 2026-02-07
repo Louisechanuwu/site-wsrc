@@ -17,6 +17,9 @@ const albuns = {
         'fotosgaleria/imagens_igreja/1.jpg',
         'fotosgaleria/imagens_igreja/2.jpg',
         'fotosgaleria/imagens_igreja/3.jpg'
+    ],
+    'josemenino':[
+        'fotosgaleria/foto3.jpeg'
     ]
 };
 
