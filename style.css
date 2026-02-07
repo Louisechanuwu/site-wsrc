@@ -24,25 +24,24 @@
 
 .carrossel{
   position: relative;
-  width: 100%; /* Ocupa a largura disponível */
+  width: 80%;
   max-width: 100%;
   margin: auto;
-  overflow: hidden; /* Esconde o que está fora da moldura */
+  overflow: hidden; 
   border-radius: 10px;
-
 }
 
 .imagens-carrossel {
-  display: flex; /* Coloca as imagens lado a lado */
-  transition: transform 0.5s ease-in-out; /* Suaviza o deslize */
+  display: flex; 
+  transition: transform 0.5s ease-in-out; 
   object-fit: cover;
   width: 100%;
 }
 
 .imagem-carrossel{
-  min-width: 100%; /* Cada imagem ocupa 100% da moldura */
+  min-width: 100%;
   object-fit: cover;
-  height: 500px; /* Altura fixa ou use aspect-ratio */
+  height: 400px; 
   object-position: center;
 }
 
@@ -63,20 +62,22 @@
 
 @media screen and (max-width: 768px) {
   .carrossel {
-    max-width: 95%; 
+    max-width: 100%; 
     border-radius: 8px;
+    width: 100%;
   }
 
   .imagem-carrossel {
-    height: 200px; 
+    height: 100px; 
+    width: 100%;
   }
 
   #botao-ir, #botao-voltar {
     padding: 10px;
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    background: rgba(28, 28, 51, 0.9); 
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    background: rgba(28, 28, 51, 0.3); 
   }
 }
 
@@ -176,7 +177,6 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
 
 /*Galeria Imagens*/
 
-    /* Grade de miniaturas */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -190,9 +190,8 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
       transition: 0.3s;
     }
 
-    /* O fundo escuro do Modal */
     .modal {
-      display: none; /* Escondido por padrão */
+      display: none;
       position: fixed;
       z-index: 2000;
       left: 0;
@@ -204,7 +203,6 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
       align-items: center;
     }
 
-    /* Container da imagem no popup */
     .modal-content {
       position: relative;
       display: flex;
@@ -216,11 +214,10 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
 
     .modal-content img {
       max-width: 100%;
-      max-height: 80vh; /* Não deixa a imagem ser maior que a tela */
+      max-height: 80vh; 
       border: 3px solid white;
     }
 
-    /* Botão Fechar */
     .close {
       position: absolute;
       top: 20px;
@@ -230,7 +227,6 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
       cursor: pointer;
     }
 
-    /* Botões Next/Prev */
     .prev, .next {
       position: absolute;
       background: rgba(255,255,255,0.2);
@@ -243,7 +239,6 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
     .prev { left: -50px; }
     .next { right: -50px; }
 
-    /* Ajuste para celular: botões dentro da imagem */
     @media (max-width: 600px) {
       .prev { left: 0; }
       .next { right: 0; }
@@ -376,50 +371,49 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
     }
 
     .sobre-card {
-        background: #1c1c33; /* Fundo azul escuro profundo */
+        background: #1c1c33;
         max-width: 900px;
         padding: 40px;
         border-radius: 8px;
         box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-        border-right: 6px solid #eded06; /* Detalhe lateral em amarelo */
-        color: #fff; /* Texto principal em branco */
+        border-right: 6px solid #eded06; 
+        color: #fff; 
     }
 
     .sobre-header h2 {
         font-size: 2.2rem;
-        color: #eded06; /* Título em amarelo */
+        color: #eded06; 
         margin-bottom: 10px;
     }
 
     .linha-detalhe {
         width: 80px;
         height: 4px;
-        background-color: #3c4474; /* Azul médio para o detalhe */
+        background-color: #3c4474; 
         margin-bottom: 30px;
     }
 
     .sobre-texto p {
         font-size: 1.1rem;
         line-height: 1.8;
-        color: #f0f0f0; /* Branco levemente acinzentado para leitura */
+        color: #f0f0f0; 
         margin-bottom: 20px;
         text-align: justify;
     }
 
     .sobre-texto strong {
-        color: #eded06; /* Destaques em amarelo */
+        color: #eded06;
     }
 
     .chamada {
         font-style: italic;
-        background: #3c4474; /* Fundo azul médio para a citação */
+        background: #3c4474; 
         padding: 20px;
         border-radius: 4px;
         color: #fff !important;
     }
 
 
-        /* Classe para o efeito de revelação */
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -439,18 +433,18 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
     }
 
     .servicos-card {
-        background-color: #1c1c33; /* Seu Azul Escuro */
+        background-color: #1c1c33; 
         width: 100%;
-        max-width: 800px; /* Limita a largura para não ficar esticado */
-        margin: 0 auto;    /* CENTRALIZA A DIV ENTRE ESQUERDA E DIREITA */
+        max-width: 800px; 
+        margin: 0 auto;    
         padding: 40px;
         border-radius: 12px;
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-        border-top: 5px solid #eded06; /* Detalhe superior em amarelo */
+        border-top: 5px solid #eded06; 
     }
 
     .servicos-header h2 {
-        color: #eded06; /* Amarelo no título */
+        color: #eded06; 
         font-size: 1.8rem;
         text-transform: uppercase;
         margin-bottom: 5px;
@@ -459,7 +453,7 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
     .linha-detalhe {
         width: 50px;
         height: 3px;
-        background-color: #3c4474; /* Azul médio para detalhe */
+        background-color: #3c4474; 
         margin-bottom: 25px;
     }
 
@@ -467,7 +461,7 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
         list-style: none;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Divide em 2 colunas se houver espaço */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
         gap: 15px;
     }
 
@@ -477,11 +471,11 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
         display: flex;
         align-items: center;
         padding: 10px;
-        border-bottom: 1px solid #3c4474; /* Linha sutil entre itens */
+        border-bottom: 1px solid #3c4474; 
     }
 
     .lista-servicos li span {
-        color: #eded06; /* Checkmark em amarelo */
+        color: #eded06; 
         font-weight: bold;
         margin-right: 15px;
         font-size: 1.2rem;
@@ -493,7 +487,6 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
         font-weight: bold;
     }
 
-    /* Reutilizando o efeito de revelação do "Sobre Nós" */
     .reveal {
         opacity: 0;
         transform: translateY(30px);
@@ -503,6 +496,52 @@ position: fixed; bottom: 75px; right: 15px; z-index: 9999;
     .reveal.active {
         opacity: 1;
         transform: translateY(0);
+    }
+
+    @media screen and (max-width: 768px) {
+    .sobre-container, .servicos-container {
+        width: 100%; 
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-card, .servicos-card {
+        width: 92%; 
+        padding: 25px 20px;
+        border-right: none;
+        border-top: 5px solid #eded06; 
+    }
+
+    .sobre-header h2, .servicos-header h2 {
+        font-size: 1.6rem; 
+        text-align: center;
+    }
+
+    .linha-detalhe {
+        margin: 0 auto 20px auto; 
+    }
+
+    .sobre-texto p {
+        font-size: 1rem; 
+        text-align: left; 
+        line-height: 1.6;
+    }
+
+    .lista-servicos {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+
+    .lista-servicos li {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+
+    .chamada {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
     }
 
   /*fim Caixas de texto*/

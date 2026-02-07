@@ -43,7 +43,6 @@ function abrirAlbum(nomeDoAlbum) {
 function changeSlide(direcao) {
     indexAtual += direcao;
 
-    // Loop infinito dentro do álbum
     if (indexAtual >= fotosAtuais.length) indexAtual = 0;
     if (indexAtual < 0) indexAtual = fotosAtuais.length - 1;
 
@@ -54,7 +53,6 @@ function closeModal() {
     modal.style.display = "none";
     document.body.style.overflow = "auto";
 
-// Fechar ao clicar fora da imagem
 modal.addEventListener('click', (e) => {
     if (e.target === modal) closeModal();
 });

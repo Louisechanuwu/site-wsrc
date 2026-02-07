@@ -38,25 +38,24 @@
 
     
     <section id="sobre-nos" class="sobre-container">
-        <script>function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
-            
-            if (elementTop < windowHeight - elementVisible) {
-                reveals[i].classList.add("active");
+        <!--script reveal-->
+            <script>function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
             }
         }
-    }
 
-    window.addEventListener("scroll", reveal);
+        window.addEventListener("scroll", reveal);
+        document.addEventListener("DOMContentLoaded", reveal);
 
-    // Executa uma vez ao carregar para caso a div já esteja na tela
-    document.addEventListener("DOMContentLoaded", reveal);
-
-    </script>
+        </script><!--Fim script reveal-->
         <div class="sobre-card reveal">
             <div class="sobre-header">
                 <h2>Sobre a WS</h2>
@@ -114,6 +113,7 @@
     <!--GALERIA-->
     <div id="alinhargaleria">
     <div class="galeria">
+
 
 
         <div class="single-galeria wg2 hg2" onclick="abrirAlbum('prediocasqueiro')">
